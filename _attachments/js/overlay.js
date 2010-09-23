@@ -77,7 +77,6 @@
                             var p = $("ul", prop);
                             p.sortable();
 
-
                             $(".add", prop)
                                 .button()
                                 .bind("click", function(e) {
@@ -105,7 +104,7 @@
         inspect: function(propId) {
             var prop = this._properties[propId];
             var tpl = this.templates["inspect_" + prop.type];
-
+            $("#inspector div").html(tpl);
             
             
             
