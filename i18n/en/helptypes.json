@@ -1,0 +1,10 @@
+{ 
+    "string": "Value must be a string",
+        "number": "Value must be a number, floating point numbers are allowed.",
+
+        "integer": "Value must be an integer, no floating point numbers are allowed.  This is a subset of the number type.",
+        "boolean": "Value must be a boolean.",
+        "object": "Value must be an object.",
+        "array": "Value must be an array.",
+        "any": "Value may be of any type including null."
+}

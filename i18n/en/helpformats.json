@@ -1,0 +1,23 @@
+{
+    "date:": "This should be a date in the format of YYYY-MM-DD.",
+    "time": "This should be a time in the format of hh:mm:ss.",
+    "utc-millisec": "This should be the difference, measured in
+milliseconds, between the specified time and midnight, January 1, 1970
+UTC.  The value should be a number (integer or float).",
+    "regex": "A regular expression.",
+    "color": "This is a CSS color (like \"#FF0000\" or \"red\").",
+    "style": "This is a CSS style definition (like \"color: red;
+background-color:#FFF\").",
+    "phone": "This should be a phone number (format may follow E.123)."
+    "uri": "This value should be a URI..",
+    "email": "This should be an email address.",
+    "ip-address": "This should be an ip version 4 address.",
+    "ipv6": "This should be an ip version 6 address."
+    "street-address": "This should be a street address.",
+    "locality": "This should be a city or town.",
+    "region": "This should be a region (a state in the US, province in
+Canada, etc.)",
+    "postal-code": "This should be a postal code (AKA zip code).",
+    "country": "This should be the name of a country."
+}
+

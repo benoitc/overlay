@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 1em;
+    font-size: 70%;
+}
+
+header#main {
+    display: block;
+
+}
+
+#main h1 {
+    font-size: 1.2em;
+}
+
+
+#footer {
+    display: block;
+}
+
+
+
+#choose-type ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+};

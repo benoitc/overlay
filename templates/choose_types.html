@@ -1,0 +1,9 @@
+<div id="choose-type" title="Chosse a property type">
+    <label for="schemaType">Choose a type:</label>&nbsp;<select id="schemaType">
+        {{#types}}
+        <option value="{{.}}">{{.}}</option>
+        {{/types}}
+    </select>
+    <h4>Description</h4>
+    <p class="help"></p>
+</div>

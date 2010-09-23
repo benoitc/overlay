@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Schema Editor</title>
+
+        <!-- load modernizr first -->
+        <script type="text/javascript"
+            src="js/modernizr-1.5.min.js"></script>
+
+        <!-- blueprint -->
+        <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+        <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+        <!-- jquery ui theme -->
+        <link rel="stylesheet"
+        href="css/blitzer/jquery-ui-1.8.5.custom.css">
+
+        <!-- main theme -->
+        <link rel="stylesheet"
+        href="css/overlay.css">
+        
+    </head>
+    <body>
+        <div class="container">
+        
+            <header class="span-24 last" id="main">
+            <h1>JSON Schema Editor</h1>
+            </header>
+        
+            
+            <div class="span-4">
+                <ul>
+                    <li><a href="#/all_docs">All docs</a></li>
+                    <li><a href="#/type/create">Create type</a></li>
+                </ul>
+
+                <div id="types">
+                </div> 
+            </div>
+            <div class="span-20 last">
+                <form id="fschema">
+                    <div class="span-20 last">
+                        <p><label for="fname">Name of Schema:</label><input
+                        type="text" id="tname" value="">&nbsp;<input
+                        type="submit" value="Save schema"></p>
+                       <a href="#" title="Add a new property" id="addProp">+</a> 
+                    </div>
+                    <div class="span-16">
+                        <ul id="properties"></ul>
+
+                    </div>
+                    <div class="span-4 last" id="inspector">
+                        <h3>Inspector</h3>
+                        <div></div>
+
+                    </div>
+
+            
+                </form>
+            </div>
+            <footer id="footer" class="span-24 last">
+            <p>Copyright 2010 - <a href="http://benoitc.io">Benoît
+                Chesneau</a> - Under <a href="license.html">MIT
+                license</a></p>
+            </footer> 
+
+
+    </div>
+        
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/overlay.js"></script>
+        <script>
+            (function() {
+                $.couch.app(function(app) {
+                    new $.overlay.schemaEditor(app);
+                });
+            })(); 
+        </script>
+    </body>
+</html>
