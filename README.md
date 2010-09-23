@@ -19,8 +19,7 @@ If use with Django :
 
 ## Installation
  
-Build Apache CouchDB
-++++++++++++++++++++
+### Build Apache CouchDB
 
 Here we build Apache CouchDB in development mode. We use the trunk version 
 waiting 0.11 is released::
@@ -39,8 +38,7 @@ Don't forget to install dependencies first : spidermonkey 1.7, icu4c & erlang. O
 	$ apt-get install automake autoconf libtool help2man
 	$ apt-get install build-essential erlang libicu-dev libmozjs-dev libcurl4-openssl-dev
 
-Install Couchapp
-++++++++++++++++
+### Install Couchapp
 
 Couchapp requires Python 2.5x or sup. To install couchapp using
 easy_install you must make sure you have a recent version of distribute installed:
@@ -60,8 +58,7 @@ More installion options on the
 [website](http://www.couchapp.org/page/installing).
 
 
-Deploy this app
-+++++++++++++++
+### Deploy this app
 
 Assuming you just cloned this app from git, and you have changed into the app directory in your terminal, you want to push it to your CouchDB with the CouchApp command line tool, like this:
 
@@ -93,9 +90,12 @@ This pushes to the `default` as specified. To push to the `public` you'd run:
 
 Of course you can continue to add more deployment targets as you see fit, and give them whatever names you like.
 
+Go on this url :
 
-Use with django
-+++++++++++++++
+   http://hostname:5984/mydatabase/_design/overlay/schema.html
+
+
+### Use with django
 
 TODO.
 
